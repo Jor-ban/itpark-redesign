@@ -1,0 +1,17 @@
+@media (max-width: 992px) {
+    .news-row {
+        flex-direction: column;
+    }
+    .new {
+        padding: 0 !important;
+        display: flex;
+        margin: 5px 0;
+    }
+    .new img {
+        border-radius: 0;
+        width: 200px;
+    }
+    .new__info {
+        border-radius: 0;
+    }
+}

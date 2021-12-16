@@ -1,0 +1,13 @@
+@media (max-width: 992px) {
+    .navbar-toggler {
+        display: block !important;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .lang-switch {
+        margin-top: 12px;
+        border-radius: 0;
+        padding-left: 12px !important;
+    }
+}
