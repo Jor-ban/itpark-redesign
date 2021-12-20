@@ -1,3 +1,7 @@
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
 .hero {
     width: 100%;
     border-radius: 25px;
@@ -8,6 +12,8 @@
     width: 600px;
 }
 .hero h1 {
+    width: 240px;
+    color: var(--light);
     font-size: 60px;
 }
 .hero-param {
@@ -60,7 +66,7 @@
     box-shadow: 0 0 0 transparent;
 }
 .scroll-btn button:hover {
-    box-shadow: 0 0 3px 3px var(--itpark);
+    box-shadow: 0 0 0 3px var(--itpark);
 }
 .cone {
     position: absolute;
@@ -70,8 +76,9 @@
     width: 700px;
     height: 700px;
     border-radius: 500px;
-    background: #FFFFFF;
-    box-shadow: 10px -10px 25px rgba(0, 0, 0, 0.07);
+    background: var(--dark);
+    box-shadow: 10px -10px 25px var(--light);
+    opacity: 0.02;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,13 +94,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px -10px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px -10px 25px var(--light);
 }
 .cone__inner__inner {
     width: 300px;
     height: 300px;
     border-radius: 300px;
-    box-shadow: 10px -10px 25px rgba(0, 0, 0, 0.07);
+    box-shadow: 10px -10px 25px var(--light);
 }
 .fz {
     color: var(--itpark);
@@ -114,8 +121,9 @@
 .chat__message {
     width: 555px;
     padding: 23px 33px;
-    background-color: #3C3B3B;
-    color: white;
+    background: #3C3B3B;
+    color: var(--light);
+    box-shadow: 0 24px 32px -24px rgba(15, 15, 15, 0.5);
     border-radius: 24px 24px 24px 0;
 }
 .chat__message::after {
@@ -128,7 +136,7 @@
     width: 50px;
     height: 50px;
     border-radius: 60px;
-    background-color: #3C3B3B;
+    background: #3C3B3B;
 }
 .chat__message::before {
     content: "";
@@ -138,7 +146,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50px;
-    background-color: white;
+    background-color: var(--dark);
     bottom: -70px;
     margin-left: -122px;
 }
@@ -158,6 +166,7 @@
 }
 .category__info {
     width: 700px;
+    margin-right: 20px;
 }
 .category__num {
     width: max-content;
@@ -167,7 +176,7 @@
     color: white;
     background-color: #8BC5E5;
     margin-bottom: 10px;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 .techvibe__num {
     background-color: #e6c2e5;
@@ -214,9 +223,15 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--light);
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
+    /*transition: all 0.4s;*/
 }
+/*.splide__slide:hover {*/
+/*    opacity: 1;*/
+/*}*/
 .splide__slide img {
     height: 100%;
 }
@@ -224,7 +239,7 @@
     cursor: pointer;
 }
 .new:hover .new__info{
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 25px rgba(256, 256, 256, 0.1);
 }
 .new img {
     width: 100%;
@@ -237,6 +252,58 @@
     transition: all 0.3s;
     border: 1px solid rgba(121, 121, 121, 0.2);
     padding: 15px;
-    background-color: white;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
     border-radius: 0 0 10px 10px;
+}
+footer ul {
+    margin-right: 10px;
+    list-style-type: none;
+}
+.footer__contacts__info a{
+    text-decoration: none;
+    color: #777E90;
+}
+.footer__contacts__info a:hover{
+    color: var(--itpark);
+}
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+}
+.footer__menu a {
+    font-weight: 700;
+    color: #A2ACC4 !important;
+    text-decoration: none;
+}
+.footer__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__links ul {
+    display: flex;
+    padding: 0;
+}
+.footer__links__item{
+    background-color: #393C45;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    box-shadow: 0 0 0 transparent;
+}
+.footer__links__item:hover {
+    box-shadow: 0 0 0 2px var(--itpark);
+}
+.footer__links__item img {
+    width: 20px;
+}
+.footer__links__item img.facebook {
+    width: unset;
+    height: 20px;
 }

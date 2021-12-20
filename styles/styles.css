@@ -1,5 +1,9 @@
 :root {
     --itpark: #7DBA28;
+    --itpark-semi: rgba(148, 255, 0, 0.5);
+    --dark: #1E1F25;
+    --light: white;
+    --deep-dark: #141416;
 }
 
 body {
@@ -9,7 +13,7 @@ body {
 }
 nav {
     font-weight: 600;
-    background: linear-gradient(126.6deg, rgba(253, 253, 253, 0.7) 28.69%, rgba(255, 255, 255, 0.48) 100%);
+    background: linear-gradient(126.6deg, #1E1F25 28.69%, rgba(30, 31, 37, 0.5) 100%);
     backdrop-filter: blur(140px);
     position: fixed !important;
     z-index: 666;
@@ -17,11 +21,12 @@ nav {
     top: 0;
     width: 100vw;
 }
-.nav-link {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+.nav-link, .hover-a {
+    color: var(--light) !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
 }
-.nav-link:after {
+.nav-link:after, .hover-a:after {
     transition: all 0.3s ease-in-out;
     display: block;
     width: 100%;
@@ -32,10 +37,10 @@ nav {
     content: "";
     background-color: var(--itpark);
 }
-.nav-link:hover {
+.nav-link:hover, .hover-a:hover {
     color: var(--itpark) !important;
 }
-.nav-link:hover:after {
+.nav-link:hover:after, .hover-a:hover:after {
     margin-top: 7px;
     margin-bottom: -9px;
     opacity: 1;
@@ -49,17 +54,17 @@ nav {
     /* Note: backdrop-filter has minimal browser support */
 }
 .glass-hover {
-    background: transparent;
-    backdrop-filter: blur(0px);
-    transition: all 0.5s;
+    background: linear-gradient(126.6deg, rgba(218, 218, 218, 0.04) 28.69%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(140px);
+    transition: all 0.1s;
+    background-size: 100% 0;
 }
 .glass-hover:hover {
-    background: linear-gradient(126.6deg, rgba(218, 218, 218, 0.12) 28.69%, rgba(0, 0, 0, 0) 100%);
-    backdrop-filter: blur(140px);
+    background-size: 100% 100%;
     /* Note: backdrop-filter has minimal browser support */
 }
 .btn-outline-success {
-    color: black !important;
+    color: white !important;
     font-weight: bold;
     border-color: var(--itpark) !important;
 }
@@ -78,15 +83,21 @@ nav {
     border-radius: 7px;
 }
 .btn-itpark {
-    transition: box-shadow 0.3s ease-in-out;
-    background-color: var(--itpark);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--itpark-semi);
     border: none;
     border-radius: 20px;
-    color: white;
     font-weight: bold;
     padding: 5px 25px;
     box-shadow: 0 0 0 transparent;
 }
 .btn-itpark:hover {
+    background-color: var(--itpark);
     box-shadow: 0 0 0 4px var(--itpark);
+    /*color: white !important;*/
+}
+
+footer {
+    padding: 30px;
+    background-color: var(--deep-dark);
 }

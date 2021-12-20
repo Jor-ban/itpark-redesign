@@ -1,4 +1,28 @@
+@media (max-width: 1200px) {
+   .chat__message {
+       width: 300px;
+   }
+}
+
 @media (max-width: 992px) {
+    .hero {
+        flex-wrap: wrap;
+    }
+    .laptop > img {
+        width: 100%;
+    }
+    .hero h1 {
+        text-align: center;
+        width: 100%;
+        margin-bottom: -50px;
+    }
+    .chat__message::before, .chat__message::after {
+        display: none;
+    }
+    .chat__message {
+        border-radius: 0 20px 20px 20px;
+        width: 100%;
+    }
     .news-row {
         flex-direction: column;
     }
@@ -13,5 +37,106 @@
     }
     .new__info {
         border-radius: 0;
+    }
+    .footer__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .footer__logo {
+        width: 60%;
+        margin-right: 20px;
+    }
+
+    .footer__menu ul {
+        padding: 0;
+        width: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .laptop img {
+        margin-left: -10%;
+    }
+    .hero h1 {
+        margin-bottom: 0;
+    }
+    .bg-bubbles {
+        margin-bottom: -130px;
+    }
+    div.scroll-btn {
+        margin-bottom: 0 !important;
+    }
+    #typerText {
+        position: absolute;
+        top: 190px;
+        height: max-content;
+        left: 37%;
+    }
+    .category {
+        padding: 10px !important;
+        align-items: flex-start;
+    }
+    .category__icon img{
+        width: 100px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 540px) {
+    .laptop img {
+        display: none;
+    }
+    #typerText {
+        position: static;
+        margin-bottom: 30px;
+    }
+    .chat__message {
+        padding: 10px;
+    }
+    .category {
+        flex-direction: column-reverse;
+    }
+    .category__info {
+        margin-top: -20px;
+        width: 100%;
+    }
+    .category__num {
+        position: relative;
+        z-index: 2;
+        opacity: 1;
+    }
+    .category h3 {
+        font-size: 18px;
+    }
+    .category p {
+        font-size: 14px;
+    }
+    .new {
+        font-size: 14px;
+    }
+    .new img {
+        margin-left: 14px;
+        width: 114px;
+        height: 100px;
+    }
+
+    .new__info {
+        padding: 7px 10px;
+        height: 100px;
+    }
+    .new__info hr {
+        margin: 5px
+    }
+    .new__info p {
+        height: 42px;
+        overflow-y: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0;
+    }
+    .footer__contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 }
