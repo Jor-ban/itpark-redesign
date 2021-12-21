@@ -1,6 +1,12 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--dark);
     color: var(--light);
+    width: 100vw;
+    overflow-x: hidden;
 }
 .hero {
     width: 100%;
