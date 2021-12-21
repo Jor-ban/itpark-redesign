@@ -55,6 +55,9 @@
     }
 }
 @media (max-width: 767px) {
+    .cone {
+        display: none;
+    }
     .laptop img {
         margin-left: -10%;
     }
@@ -69,9 +72,9 @@
     }
     #typerText {
         position: absolute;
-        top: 190px;
+        top: 290px;
         height: max-content;
-        left: 37%;
+        left: 40%;
     }
     .category {
         padding: 10px !important;

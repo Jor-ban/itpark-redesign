@@ -4,6 +4,8 @@
     --dark: #1E1F25;
     --light: white;
     --deep-dark: #141416;
+
+    overflow-x: hidden;
 }
 
 body {
