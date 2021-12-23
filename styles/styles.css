@@ -12,6 +12,7 @@ body {
     font-family: Gilroy, sans-serif !important;
     overflow-x: hidden;
     padding-top: 70px;
+    width: 100vw;
 }
 nav {
     font-weight: 600;
@@ -47,22 +48,52 @@ nav {
     margin-bottom: -9px;
     opacity: 1;
 }
+.scroller-up-arrow.hidden {
+    opacity: 0;
+    bottom: -100px;
+}
+.scroller-up-arrow {
+    transition: all 0.3s;
+    opacity: 1;
+    background-color: var(--dark);
+    cursor: pointer;
+    position: fixed;
+    bottom: 10vw;
+    right: 10vw;
+    border: 2px solid white;
+    padding: 8px 10px 12px 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 0 transparent;
+}
+.scroller-up-arrow:hover {
+    border-color: var(--itpark);
+    box-shadow: 0 0 3px 0 var(--itpark);
+}
 .text-black{
     color: #3C3B3B !important;
 }
 .glass {
     background: linear-gradient(126.6deg, rgba(218, 218, 218, 0.12) 28.69%, rgba(0, 0, 0, 0) 100%);
     backdrop-filter: blur(140px);
+    border-radius: 20px;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    box-shadow: 0 8px 32px 0 rgba(128, 128, 128, 0.03);
     /* Note: backdrop-filter has minimal browser support */
 }
 .glass-hover {
-    background: linear-gradient(126.6deg, rgba(218, 218, 218, 0.04) 28.69%, rgba(0, 0, 0, 0) 100%);
-    backdrop-filter: blur(140px);
     transition: all 0.1s;
-    background-size: 100% 0;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
 }
 .glass-hover:hover {
     background-size: 100% 100%;
+    background: linear-gradient(126.6deg, rgba(218, 218, 218, 0.04) 28.69%, rgba(0, 0, 0, 0) 100%);
+    border-color: grey;
+    box-shadow: 0 8px 32px 0 rgba(128, 128, 128, 0.03);
+    backdrop-filter: blur( 140px );
+    -webkit-backdrop-filter: blur( 140px );
+    border-radius: 20px;
     /* Note: backdrop-filter has minimal browser support */
 }
 .btn-outline-success {
@@ -88,6 +119,7 @@ nav {
     transition: all 0.3s ease-in-out;
     background-color: var(--itpark-semi);
     border: none;
+    color: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
     font-weight: bold;
     padding: 5px 25px;
@@ -95,6 +127,7 @@ nav {
 }
 .btn-itpark:hover {
     background-color: var(--itpark);
+    color: white !important;
     box-shadow: 0 0 0 4px var(--itpark);
     /*color: white !important;*/
 }

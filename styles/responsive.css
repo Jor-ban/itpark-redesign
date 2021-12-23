@@ -10,4 +10,10 @@
         border-radius: 0;
         padding-left: 12px !important;
     }
+    .scroller-up-arrow {
+        padding: 5px 7px 9px 7px;
+    }
+    .scroller-up-arrow img {
+        width: 10px;
+    }
 }

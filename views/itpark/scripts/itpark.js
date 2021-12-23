@@ -1,3 +1,12 @@
+// scroll button
+document.getElementById('scroll-down').onclick = function() {
+    window.scrollTo({
+        top: 600,
+        behavior: 'smooth'
+    });
+};
+
+
 // typeWriter
 const typewriter = new Typewriter(
     document.getElementById('typerText'),

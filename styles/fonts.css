@@ -1,114 +1,121 @@
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-Regular.ttf');
+    src: url('Gilroy/Gilroy-Regular.ttf');
     font-weight: 500;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-Bold.ttf');
+    src: url('Gilroy/Gilroy-Bold.ttf');
     font-weight: 800;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-Light.ttf');
+    src: url('Gilroy/Gilroy-Light.ttf');
     font-weight: 400;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-Medium.ttf');
+    src: url('Gilroy/Gilroy-Medium.ttf');
     font-weight: 600;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-SemiBold.ttf');
+    src: url('Gilroy/Gilroy-SemiBold.ttf');
     font-weight: 700;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-ExtraBold.ttf');
+    src: url('Gilroy/Gilroy-ExtraBold.ttf');
     font-weight: 900;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-LightItalic.ttf');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: Gilroy;
-    src: url('fonts/Gilroy-MediumItalic.ttf');
-    font-weight: 600;
-    font-style: italic;
-}
-@font-face {
-    font-family: Gilroy;
-    src: url('fonts/Gilroy-SemiBoldItalic.ttf');
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: Gilroy;
-    src: url('fonts/Gilroy-ExtraBoldItalic.ttf');
-    font-weight: 900;
-    font-style: italic;
-}
-@font-face {
-    font-family: Gilroy;
-    src: url('fonts/Gilroy-BoldItalic.ttf');
-    font-weight: 800;
-    font-style: italic;
-}
-@font-face {
-    font-family: Gilroy;
-    src: url('fonts/Gilroy-LightItalic.ttf');
+    src: url('Gilroy/Gilroy-LightItalic.ttf');
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-MediumItalic.ttf');
+    src: url('Gilroy/Gilroy-MediumItalic.ttf');
     font-weight: 600;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-SemiBoldItalic.ttf');
+    src: url('Gilroy/Gilroy-SemiBoldItalic.ttf');
     font-weight: 700;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-ExtraBoldItalic.ttf');
+    src: url('Gilroy/Gilroy-ExtraBoldItalic.ttf');
     font-weight: 900;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-BoldItalic.ttf');
+    src: url('Gilroy/Gilroy-BoldItalic.ttf');
     font-weight: 800;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-LightItalic.ttf');
+    src: url('Gilroy/Gilroy-LightItalic.ttf');
     font-weight: 400;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-MediumItalic.ttf');
+    src: url('Gilroy/Gilroy-MediumItalic.ttf');
     font-weight: 600;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-SemiBoldItalic.ttf');
+    src: url('Gilroy/Gilroy-SemiBoldItalic.ttf');
     font-weight: 700;
     font-style: italic;
 }
 @font-face {
     font-family: Gilroy;
-    src: url('fonts/Gilroy-ExtraBoldItalic.ttf');
+    src: url('Gilroy/Gilroy-ExtraBoldItalic.ttf');
     font-weight: 900;
     font-style: italic;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-BoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-LightItalic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-MediumItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-SemiBoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('Gilroy/Gilroy-ExtraBoldItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* FFGoodPro */
+@font-face {
+    font-family: Metroline;
+    src: url('FFGoodPro/FFGoodProXCond-Black.ttf');
+    font-weight: 700;
 }

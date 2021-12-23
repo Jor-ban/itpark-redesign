@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../../styles/fonts.css">
     <link rel="stylesheet" href="../../styles/styles.css">
     <link rel="stylesheet" href="../../styles/responsive.css">
+    <!-- global js -->
+    <script defer src="../../scripts/scroller.js"></script>
     <!-- Splide -->
     <script defer src="../../scripts/splide.min.js"></script>
     <script defer src="../../scripts/splide-extension-auto-scroll.js"></script>
@@ -51,13 +53,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#news">Новости</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/about.html">О нас</a>
+                    </li>
                     <li class="nav-item px-3 lang-switch">
                         <div class="dropdown">
                             <a class="btn btn-outline-success rounded-pill dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 Ru
                             </a>
 
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Русский</a></li>
                                 <li><a class="dropdown-item" href="#">O'zbekcha</a></li>
                                 <li><a class="dropdown-item" href="#">English</a></li>
@@ -87,7 +92,7 @@
             </div>
             <div class="scroll-btn w-100 d-flex flex-column justify-content-center align-items-center mt-2 mb-5">
                 <span class="dot"></span>
-                <button>
+                <button id="scroll-down">
                     <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 13.3999L11.4924 14.4075L12.5 15.4152L13.5076 14.4075L12.5 13.3999ZM0.0923631 3.00753L11.4924 14.4075L13.5076 12.3923L2.10762 0.992273L0.0923631 3.00753ZM13.5076 14.4075L24.9076 3.00753L22.8924 0.992272L11.4924 12.3923L13.5076 14.4075Z" fill="white"/>
                     </svg>
@@ -106,7 +111,7 @@
             <div class="w-100 d-flex flex-wrap justify-content-around">
                 <div class="fz">
                     <img src="img/bubbles.png" alt="bubbles" class="fz__bubbles">
-                    <img src="img/fz_dark.png" alt="F.Z. Ibragimov">
+                    <img src="img/fz_dark.png" alt="F.Z. Ibragimov" class="fz__image">
                     <img src="img/megaphone.png" alt="megaphone icon" class="fz__megaphone">
                     <br>
                     <h4 class="text-center">Фарход Ибрагимов</h4>
@@ -224,41 +229,43 @@
             <hr>
             <h2 class="py-4 fw-bold text-center">НОВОСТИ</h2>
             <div class="d-flex w-100 news-row">
-                <div class="new col-lg-3 p-3">
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="w-100 d-flex justify-content-center align-items-center my-4">
-                <button class="btn btn-outline-light rounded-pill px-5 mx-auto fw-bold">Подробнее</button>
+                <a href="views/news.html">
+                    <button class="btn btn-outline-light rounded-pill px-5 mx-auto fw-bold">Подробнее</button>
+                </a>
             </div>
         </div>
     </section>
@@ -267,41 +274,43 @@
             <hr>
             <h2 class="py-4 fw-bold text-center">НОВОСТИ РЕЗИДЕНТОВ</h2>
             <div class="d-flex w-100 news-row">
-                <div class="new col-lg-3 p-3">
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
-                <div class="new col-lg-3 p-3">
+                </a>
+                <a href="views/new.html" class="new col-lg-3 p-3">
                     <img src="https://it-park.uz/storage/images/news/medium/qnjLADiNOVuaxAljh2y3aPSUsGJvPvZm6aiDV4QK.jpg" alt="itpark news">
                     <div class="new__info">
                         <p>Резиденту IT Park «Genesis Innovation» исполнилось 3 года!</p>
                         <hr class="w-75 mx-auto">
                         <small>2021-09-11</small>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="w-100 d-flex justify-content-center align-items-center my-4">
-                <button class="btn btn-outline-light rounded-pill px-5 mx-auto fw-bold">Подробнее</button>
+                <a href="views/news.html">
+                    <button class="btn btn-outline-light rounded-pill px-5 mx-auto fw-bold">Подробнее</button>
+                </a>
             </div>
         </div>
     </section>

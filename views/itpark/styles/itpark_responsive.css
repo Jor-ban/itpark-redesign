@@ -16,9 +16,6 @@
         width: 100%;
         margin-bottom: -50px;
     }
-    .chat__message::before, .chat__message::after {
-        display: none;
-    }
     .chat__message {
         border-radius: 0 20px 20px 20px;
         width: 100%;
@@ -72,7 +69,7 @@
     }
     #typerText {
         position: absolute;
-        top: 290px;
+        top: 190px;
         height: max-content;
         left: 40%;
     }
@@ -93,6 +90,17 @@
     #typerText {
         position: static;
         margin-bottom: 30px;
+    }
+    .fz {
+        margin-top: 100px;
+    }
+    .fz__image {
+        max-width: 400px;
+        width: 100%;
+    }
+    .fz__megaphone {
+        margin-top: 60%;
+        width: 100px;
     }
     .chat__message {
         padding: 10px;
@@ -119,8 +127,7 @@
         font-size: 14px;
     }
     .new img {
-        margin-left: 14px;
-        width: 114px;
+        width: unset;
         height: 100px;
     }
 
