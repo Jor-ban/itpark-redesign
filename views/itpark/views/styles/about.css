@@ -2,6 +2,7 @@ h1 {
     font-family: Metroline, sans-serif !important;
     font-weight: 700;
     font-size: 200px;
+    text-transform: uppercase;
 }
 p, ul {
     color: #cdd2d5;
@@ -42,4 +43,36 @@ p, ul {
 }
 .team-member > img {
     width: 100%;
+    margin: -3px;
+    border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+    .about-main {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px) {
+    .category__icon img {
+        width: 200px !important;
+    }
+}
+@media (max-width: 540px) {
+    h1 {
+        font-size: 150px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .about-main {
+        padding: 10px;
+    }
+    .about-main img {
+        width: 100%;
+    }
+    .category__icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }

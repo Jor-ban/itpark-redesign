@@ -1,11 +1,4 @@
-html {
-    overflow-x: hidden;
-}
 
-body {
-    background-color: var(--dark);
-    color: var(--light);
-}
 .hero {
     width: 100%;
     border-radius: 25px;
@@ -135,56 +128,15 @@ body {
 #categories {
     margin-top: 100px;
 }
-
-.category {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-    border-radius: 25px;
-    margin: 50px 0;
-}
-.category__info {
-    width: 700px;
-    margin-right: 20px;
-}
-.category__num {
-    width: max-content;
-    display: block;
-    padding: 2px 10px;
-    border-radius: 20px;
-    color: white;
-    background-color: #8BC5E5;
-    margin-bottom: 10px;
-    opacity: 0.6;
-}
-.techvibe__num {
-    background-color: #e6c2e5;
-}
-.category__icon  img{
-    width: 250px;
-}
-.residence__num {
-    background-color: #92A5EF;
-}
 .residence__icon img {
     width: 300px;
     margin-left: -30px;
     margin-right: -20px;
 }
-.career__num {
-    background-color: #58C27D;
-}
-.infrastructure__num {
-    background-color: #58c200;
-}
 .infrastructure__icon img {
     margin-left: -10px;
     margin-right: -40px;
     width: 290px !important;
-}
-.shop__num {
-    background-color: #FFCE56;
 }
 
 .splide_slider {
@@ -209,9 +161,7 @@ body {
     border-radius: 15px;
     /*transition: all 0.4s;*/
 }
-/*.splide__slide:hover {*/
-/*    opacity: 1;*/
-/*}*/
+
 .splide__slide img {
     height: 100%;
 }
@@ -237,56 +187,4 @@ body {
     padding: 15px;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
     border-radius: 0 0 10px 10px;
-}
-footer ul {
-    margin-right: 10px;
-    list-style-type: none;
-}
-.footer__contacts__info a{
-    text-decoration: none;
-    color: #777E90;
-}
-.footer__contacts__info a:hover{
-    color: var(--itpark);
-}
-.footer__menu {
-    display: flex;
-    justify-content: space-around;
-}
-.footer__menu a {
-    font-weight: 700;
-    color: #A2ACC4 !important;
-    text-decoration: none;
-}
-.footer__links {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-.footer__links ul {
-    display: flex;
-    padding: 0;
-}
-.footer__links__item{
-    background-color: #393C45;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 10px;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-    box-shadow: 0 0 0 transparent;
-}
-.footer__links__item:hover {
-    box-shadow: 0 0 0 2px var(--itpark);
-}
-.footer__links__item img {
-    width: 20px;
-}
-.footer__links__item img.facebook {
-    width: unset;
-    height: 20px;
 }
