@@ -37,9 +37,6 @@
     }
 }
 @media (max-width: 767px) {
-    .cone {
-        display: none;
-    }
     .laptop img {
         margin-left: -10%;
     }

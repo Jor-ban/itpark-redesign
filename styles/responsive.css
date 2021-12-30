@@ -32,6 +32,13 @@
         width: 50%;
     }
 }
+
+@media (max-width: 767px) {
+    .cone {
+        display: none;
+    }
+}
+
 @media (max-width: 540px) {
     .footer__contacts {
         flex-direction: column;

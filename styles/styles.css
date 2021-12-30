@@ -239,3 +239,38 @@ footer ul {
 .shop__num {
     background-color: #FFCE56;
 }
+
+.cone {
+    position: absolute;
+    left: -350px;
+    margin-top: -350px;
+    z-index: -6;
+    width: 700px;
+    height: 700px;
+    border-radius: 500px;
+    background: var(--dark);
+    box-shadow: 10px -10px 25px var(--light);
+    opacity: 0.02;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cone-right {
+    left: unset;
+    right: -350px;
+}
+.cone__inner {
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px -10px 25px var(--light);
+}
+.cone__inner__inner {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    box-shadow: 10px -10px 25px var(--light);
+}

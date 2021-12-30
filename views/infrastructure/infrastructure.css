@@ -1,0 +1,25 @@
+body {}
+h1 {
+    font-size: 200px;
+    padding: 200px 0 !important;
+    font-family: Metroline, sans-serif;
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: uppercase;
+}
+p {
+    color: #93979F;
+}
+.hero {
+    background-image: url("img/infrastructure.png");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+.main {
+    margin-top: -300px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: var(--dark);
+}
