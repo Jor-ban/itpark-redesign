@@ -1,4 +1,6 @@
-
+* {
+    font-family: Gilroy, sans-serif !important;
+}
 .back a{
     color: grey !important;
     text-decoration: none;

@@ -18,8 +18,13 @@
     <link rel="stylesheet" href="../../../styles/fonts.css">
     <link rel="stylesheet" href="../../../styles/styles.css">
     <link rel="stylesheet" href="../../../styles/responsive.css">
+    <!-- Splide -->
+    <script defer src="../../../scripts/splide.min.js"></script>
+    <link rel="stylesheet" href="../../../styles/splide.min.css">
     <!-- global js -->
     <script defer src="../../../scripts/scroller.js"></script>
+    <!-- local js -->
+    <script defer src="about.js"></script>
     <!-- local css -->
     <link rel="stylesheet" href="../styles/itpark.css">
     <link rel="stylesheet" href="../styles/itpark_responsive.css">
@@ -112,56 +117,73 @@
 
 <section id="acts" class="container">
     <h2 class="fw-bold text-center py-5">Нормативно-правовые акты</h2>
-    <div class="row">
-        <div class="col-xl-3 col-md-6 p-2">
-            <div class="glass acts__item d-flex flex-column justify-content-between">
-                <div>
-                    <small class="category__num career__num mb-3">01</small>
-                    <p>Указ Президента Республики Узбекистан от 30.06.2017г. №УП-5099
-                        «О мерах по коренному улучшению условий для развития отрасли информационных технологий в республике»</p>
-                </div>
-                <div class="d-flex justify-content-center py-3">
-                    <button class="btn-itpark">Подробнее</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-6 p-2">
-            <div class="glass acts__item d-flex flex-column justify-content-between">
-                <div>
-                    <small class="category__num  mb-3">02</small>
-                    <p>Постановление Кабинета Министров от 10.01.2019 №17
-                        «О мерах по созданию технологического парка программных продуктов и информационных технологий»</p>
-                </div>
-                <div class="d-flex justify-content-center py-3">
-                    <button class="btn-itpark">Подробнее</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-6 p-2">
-            <div class="glass acts__item d-flex flex-column justify-content-between">
-                <div>
-                    <small class="category__num residence__num  mb-3">03</small>
-                    <p>Постановление Кабинета Министров от 15.07.2019 №589
-                        «О мерах по организации деятельности технологического парка программных продуктов и информационных технологий»</p>
-                </div>
-                <div class="d-flex justify-content-center py-3">
-                    <button class="btn-itpark">Подробнее</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-md-6 p-2">
-            <div class="glass acts__item d-flex flex-column justify-content-between">
-                <div>
-                    <small class="category__num infrastructure__num  mb-3">04</small>
-                    <p>Постановление Кабинета Министров от 30.10.2020 №672
-                        «О внесении изменений и дополнений в постановление кабинета министров от 15 июля 2019 года № 589 «о мерах по организации деятельности технологического парка программных продуктов и информационных технологий», а также о признании утратившими силу некоторых решений правительства»</p>
-                </div>
-                <div class="d-flex justify-content-center py-3">
-                    <button class="btn-itpark">Подробнее</button>
-                </div>
-            </div>
+    <div class="splide-acts">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="glass acts__item d-flex flex-column justify-content-between">
+                        <div>
+                            <small class="category__num career__num mb-3">01</small>
+                            <p>Указ Президента Республики Узбекистан от 30.06.2017г. №УП-5099
+                                «О мерах по коренному улучшению условий для развития отрасли информационных технологий в республике»</p>
+                        </div>
+                        <div class="d-flex justify-content-center py-3">
+                            <button class="btn-itpark">Подробнее</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="glass acts__item d-flex flex-column justify-content-between">
+                        <div>
+                            <small class="category__num career__num mb-3">01</small>
+                            <p>Указ Президента Республики Узбекистан от 30.06.2017г. №УП-5099
+                                «О мерах по коренному улучшению условий для развития отрасли информационных технологий в республике»</p>
+                        </div>
+                        <div class="d-flex justify-content-center py-3">
+                            <button class="btn-itpark">Подробнее</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="glass acts__item d-flex flex-column justify-content-between">
+                        <div>
+                            <small class="category__num career__num mb-3">01</small>
+                            <p>Постановление Кабинета Министров от 30.10.2020 №672
+                                «О внесении изменений и дополнений в постановление кабинета министров от 15 июля 2019 года № 589 «о мерах по организации деятельности технологического парка программных продуктов и информационных технологий», а также о признании утратившими силу некоторых решений правительства»</p>
+                        </div>
+                        <div class="d-flex justify-content-center py-3">
+                            <button class="btn-itpark">Подробнее</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="glass acts__item d-flex flex-column justify-content-between">
+                        <div>
+                            <small class="category__num career__num mb-3">01</small>
+                            <p>Постановление Кабинета Министров от 30.10.2020 №672
+                                «О внесении изменений и дополнений в постановление кабинета министров от 15 июля 2019 года № 589 «о мерах по организации деятельности технологического парка программных продуктов и информационных технологий», а также о признании утратившими силу некоторых решений правительства»</p>
+                        </div>
+                        <div class="d-flex justify-content-center py-3">
+                            <button class="btn-itpark">Подробнее</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="glass acts__item d-flex flex-column justify-content-between">
+                        <div>
+                            <small class="category__num career__num mb-3">01</small>
+                            <p>Постановление Кабинета Министров от 30.10.2020 №672
+                                «О внесении изменений и дополнений в постановление кабинета министров от 15 июля 2019 года № 589 «о мерах по организации деятельности технологического парка программных продуктов и информационных технологий», а также о признании утратившими силу некоторых решений правительства»</p>
+                        </div>
+                        <div class="d-flex justify-content-center py-3">
+                            <button class="btn-itpark">Подробнее</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class="container mt-4" id="mission">
         <div class="row">
             <div class="col-lg-4 p-2">
@@ -210,62 +232,46 @@
 
 <section id="team" class="container">
     <h2 class="fw-bold text-center py-5 mt-5">Наша команда</h2>
-    <div class="row">
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/fz-member.png" alt="F.Z. Ibragimov">
-                <p class="fw-bold mt-3 mb-0">Farkhod Ibragimov</p>
-                <p class="text-muted"><small>CEO</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/abdulakhad-member.png" alt="A. Kuchkarov">
-                <p class="fw-bold mt-3 mb-0">Abdulakhad Kuchkarov</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/sardor-member.png" alt="S. Akhmedov">
-                <p class="fw-bold mt-3 mb-0">Sardor Akhmedov</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/amalya-member.png" alt="A. Ergasheva">
-                <p class="fw-bold mt-3 mb-0">Amalya Ergasheva</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/fz-member.png" alt="F.Z. Ibragimov">
-                <p class="fw-bold mt-3 mb-0">Farkhod Ibragimov</p>
-                <p class="text-muted"><small>CEO</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/abdulakhad-member.png" alt="A. Kuchkarov">
-                <p class="fw-bold mt-3 mb-0">Abdulakhad Kuchkarov</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/sardor-member.png" alt="S. Akhmedov">
-                <p class="fw-bold mt-3 mb-0">Sardor Akhmedov</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-6 member-col">
-            <div class="glass-hover team-member text-center">
-                <img src="img/amalya-member.png" alt="A. Ergasheva">
-                <p class="fw-bold mt-3 mb-0">Amalya Ergasheva</p>
-                <p class="text-muted"><small>Co-Founder</small></p>
-            </div>
+    <div class="splide-members">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="member-col">
+                        <div class="glass-hover team-member text-center">
+                            <img src="img/fz-member.png" alt="F.Z. Ibragimov">
+                            <p class="fw-bold mt-3 mb-0">Farkhod Ibragimov</p>
+                            <p class="text-muted"><small>CEO</small></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="member-col">
+                        <div class="glass-hover team-member text-center">
+                            <img src="img/abdulakhad-member.png" alt="A. Kuchkarov">
+                            <p class="fw-bold mt-3 mb-0">Abdulakhad Kuchkarov</p>
+                            <p class="text-muted"><small>Co-Founder</small></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="member-col">
+                        <div class="glass-hover team-member text-center">
+                            <img src="img/sardor-member.png" alt="S. Akhmedov">
+                            <p class="fw-bold mt-3 mb-0">Sardor Akhmedov</p>
+                            <p class="text-muted"><small>Co-Founder</small></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <div class="member-col">
+                        <div class="glass-hover team-member text-center">
+                            <img src="img/amalya-member.png" alt="A. Ergasheva">
+                            <p class="fw-bold mt-3 mb-0">Amalya Ergasheva</p>
+                            <p class="text-muted"><small>Co-Founder</small></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
