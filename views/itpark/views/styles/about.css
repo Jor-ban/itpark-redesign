@@ -53,6 +53,10 @@ p, ul {
 .member-col {
     padding: 10px;
 }
+.member-col img {
+    height: 300px;
+    object-fit: cover;
+}
 .team-member {
     overflow: hidden;
     border-radius: 20px;
@@ -72,6 +76,16 @@ p, ul {
     box-shadow: none;
 }
 
+@media (max-width: 1400px) {
+    .member-col img {
+        height: 250px;
+    }
+}
+@media (max-width: 1200px) {
+    .member-col img {
+        height: 200px;
+    }
+}
 @media (max-width: 992px) {
     .about-main {
         flex-wrap: wrap;
@@ -80,6 +94,9 @@ p, ul {
 @media (max-width: 767px) {
     .category__icon img {
         width: 200px !important;
+    }
+    .member-col img {
+        height: 200px;
     }
 }
 @media (max-width: 540px) {
@@ -99,5 +116,8 @@ p, ul {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .member-col img {
+        height: 30%;
     }
 }

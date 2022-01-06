@@ -22,13 +22,17 @@ new Splide('.splide-acts', {
 new Splide('.splide-members', {
     type: 'loop',
     perPage: 4,
-    perMove: 1,
+    perMove: 3,
     lazyLoad: 'nearby',
     padding: '50px',
     pagination: false,
     breakpoints: {
         992: {
             perPage: 3,
+            perMove: 3,
+        },
+        767: {
+            perPage: 2,
             perMove: 1,
         },
         540: {
