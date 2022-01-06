@@ -113,7 +113,7 @@
     width: 100%;
     overflow-x: hidden;
 }
-.splide__slide {
+.sliders .splide__slide {
     transition: all 0.3s;
     height: 157px;
     max-width: max-content;
@@ -128,7 +128,7 @@
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
 }
-.splide__slide:hover {
+.sliders .splide__slide:hover {
     cursor: pointer;
     opacity: 1;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
