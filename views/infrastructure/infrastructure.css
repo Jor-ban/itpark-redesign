@@ -1,25 +1,163 @@
 body {}
+
 h1 {
     font-size: 200px;
     padding: 200px 0 !important;
     font-family: Metroline, sans-serif;
     text-transform: uppercase;
 }
+
 h2 {
     text-transform: uppercase;
 }
+
 p {
     color: #93979F;
 }
+
 .hero {
     background-image: url("img/infrastructure.png");
     background-size: cover;
     background-position: center;
     height: 900px;
 }
+
 .main {
+    padding: 70px 0;
     margin-top: -300px;
-    padding: 40px 20px;
     border-radius: 20px;
     background-color: var(--dark);
+}
+
+.content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    min-width: 240px;
+    height: 40px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 2px solid #7DBA28;
+    /*ITPARK*/
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+    min-width: 100%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 50%;
+    left: 2px;
+    top: 2px;
+    bottom: 4px;
+    background-color: #7DBA28;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+input:checked+.slider {
+    background-color: transparent;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(114px);
+    -ms-transform: translateX(114px);
+    transform: translateX(114px);
+}
+
+.switch-declaration {
+    font-weight: 600;
+    position: absolute;
+    top: 8px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.map {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.curtains {
+    transition: all 0.3s;
+    position: absolute;
+    height: 49.6vw;
+    margin-top: -50%;
+    width: 200vw;
+    transform: translateX(-45vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curtains>.focused-square {
+    transition: all 0.3s;
+    margin-top: -1px;
+    width: 47vw;
+    height: 100%;
+    border: 5px solid var(--itpark);
+    display: flex;
+}
+
+.curtains::before {
+    width: 100vw;
+    margin-left: -85vw;
+    height: 49.6vw;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: -5px;
+}
+
+.curtains::after {
+    /* transition: all 0.1s; */
+    margin-top: 5px;
+    width: 60vw;
+    height: 49.6vw;
+    height: calc(100% + 10px);
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: -10vw;
+}
+
+.second-stage {
+    transform: translateX(-7vw)
+}
+
+.second-stage>.focused-square {
+    width: 29vw;
 }
