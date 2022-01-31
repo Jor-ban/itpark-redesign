@@ -1,4 +1,7 @@
-body {}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 h1 {
     font-size: 200px;
@@ -40,6 +43,7 @@ ol {
 
 
 .switch {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     width: 240px;
@@ -111,11 +115,16 @@ input:checked+.slider:before {
     overflow-x: hidden;
 }
 
+.map>img {
+    height: 49.6vw;
+    width: 100vw;
+}
+
 .curtains {
     transition: all 0.3s;
     position: absolute;
     height: 49.6vw;
-    margin-top: -50%;
+    margin-top: -49.6vw;
     width: 200vw;
     transform: translateX(-45vw);
     display: flex;
@@ -135,19 +144,17 @@ input:checked+.slider:before {
 .curtains::before {
     width: 100vw;
     margin-left: -85vw;
-    height: 49.6vw;
+    height: 100%;
     content: "";
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
-    margin-top: -5px;
 }
 
 .curtains::after {
     /* transition: all 0.1s; */
-    margin-top: 5px;
+    margin-top: 0;
     width: 60vw;
-    height: 49.6vw;
-    height: calc(100% + 10px);
+    height: 100%;
     content: "";
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
@@ -160,4 +167,196 @@ input:checked+.slider:before {
 
 .second-stage>.focused-square {
     width: 29vw;
+}
+
+.map-data .col {
+    padding: 20px;
+}
+
+.uzb-map {
+    display: flex;
+    padding-bottom: 70px;
+}
+
+.uzb-map-info {
+    width: 46%;
+    min-height: 300px;
+    margin: 2%;
+    background: linear-gradient(90deg, #171717 0%, rgba(23, 23, 23, 0.8) 100%);
+    border: 1px solid #363636;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+}
+
+.uzb-map-info .splide__slide {
+    padding: 20px;
+}
+
+.uzb-map-info .splide__slide h4 {
+    padding: 10px;
+    border-bottom: 1px solid #4E4E4E;
+}
+
+.uzb-map-info .splide__slide a {
+    text-decoration: none;
+}
+
+.uzb-map-info .splide__slide a:hover {
+    text-decoration: underline;
+}
+
+.splide__arrows {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: -30px;
+    transform: translateY(50px)
+}
+
+.splide__arrow {
+    position: static;
+    background: var(--itpark)
+}
+
+.splide__arrow svg {
+    fill: white;
+}
+
+.uzb-map__map {
+    width: 50%;
+}
+
+.map-dots {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: -66%;
+    position: relative;
+    z-index: 1;
+}
+
+.map-dots__dot {
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    border-radius: 23px;
+    background-color: white;
+    border: 3px solid var(--itpark);
+    position: relative;
+}
+
+.map-dots__dot:hover {
+    box-shadow: 0 0 4px 2px var(--itpark);
+}
+
+.map-dots__dot[data-id="1"] {
+    left: 45%;
+    top: 70%;
+}
+
+.map-dots__dot[data-id="2"] {
+    left: 45%;
+    top: 45%;
+}
+
+.map-dots__dot[data-id="3"] {
+    left: 53%;
+    top: 65%;
+}
+
+.map-dots__dot[data-id="4"] {
+    left: 55%;
+    top: 60%;
+}
+
+.map-dots__dot[data-id="5"] {
+    left: 58%;
+    top: 58%;
+}
+
+.map-dots__dot[data-id="6"] {
+    left: 58%;
+    top: 48%;
+}
+
+.map-dots__dot[data-id="7"] {
+    left: 59%;
+    top: 52%;
+}
+
+.map-dots__dot[data-id="8"] {
+    left: 61%;
+    top: 59%;
+}
+
+.map-dots__dot[data-id="9"] {
+    left: 65%;
+    top: 55%;
+}
+
+.upsides ul {
+    padding: 0px 40px 0 40px;
+    list-style: none;
+}
+
+.upsides ul:first-child {
+    border-right: 1px solid #6C6C6C;
+}
+
+.upsides ul li {
+    margin-bottom: 15px;
+    color: #93979F;
+    display: flex;
+}
+
+.upsides ul li:before {
+    content: "";
+    display: block;
+    width: 15px;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    color: #93979F;
+    background: #8BC5E5;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.upsides ul li.green:before {
+    background-color: #58C27D;
+}
+
+.upsides ul li.purple:before {
+    background: #92A5EF;
+}
+
+.table-dark * {
+    color: #c0c4cc;
+    border-width: 2px !important;
+}
+
+.table-dark,
+.table-dark * {
+    background-color: transparent !important;
+}
+
+.table-dark tr {
+    border-left: 0px solid transparent !important;
+}
+
+.table-dark tr td:last-child {
+    border-right: 0px solid transparent !important;
+}
+
+.table-dark td {
+    padding: 20px 12px;
+}
+
+.table-dark tr>td:nth-child(2) {
+    background: rgba(255, 255, 255, 0.03) !important;
 }

@@ -9,3 +9,19 @@ function changeStage(event) {
         curtains.classList.remove('second-stage')
     }
 }
+
+const splide = new Splide( '.uzb-map-info', {
+    type   : 'loop',
+    drag   : 'free',
+    pagination: false,
+    perMove: 1,
+    scroll: false,
+    drag: true,
+} ).mount();
+
+const dots = document.querySelectorAll('.map-dots__dot[data-id]')
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', function() {
+        splide.go(index)
+    })
+})

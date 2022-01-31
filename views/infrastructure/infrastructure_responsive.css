@@ -1,0 +1,59 @@
+@media (max-width: 1400px) {
+    .map-dots__dot[data-id="3"] {
+        left: 50%;
+        top: 67%;
+    }
+
+    .map-dots__dot[data-id="4"] {
+        left: 53%;
+        top: 63%;
+    }
+
+    .map-dots__dot[data-id="5"] {
+        left: 56%;
+        top: 60%;
+    }
+
+    .map-dots__dot[data-id="6"] {
+        left: 55%;
+        top: 52%;
+    }
+
+    .map-dots__dot[data-id="7"] {
+        left: 55%;
+        top: 55%;
+    }
+
+    .map-dots__dot[data-id="8"] {
+        left: 57%;
+        top: 60%;
+    }
+
+    .map-dots__dot[data-id="9"] {
+        left: 60%;
+        top: 58%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .map-dots {
+        left: -10px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .uzb-map__map {
+        display: none;
+    }
+
+    .uzb-map-info {
+        width: 100%
+    }
+}
+
+@media (max-width: 767px) {
+    .upsides ul:first-child {
+        border: none;
+    }
+}
