@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: none;
+}
+
+/* debugger controls styles */
+.dg {
+  margin-right: 0 !important;
+  min-width: 320px !important;
+}
+
+.dg .c>input {
+  height: 20px;
+}
+
+#cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
