@@ -1,4 +1,4 @@
-# RxJS playground
+# IT Park redesign (planets page)
 
 1. Run `npm install`. This will install all needed dependencies.
 2. Run `npm start`. This will run the dev server.
