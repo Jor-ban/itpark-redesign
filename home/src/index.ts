@@ -1,9 +1,7 @@
 import './home.css'
-import './resizeEvent'
-import './objects'
-import './lights'
-import './debugger'
-import './customCursor'
+import './utils/debugger'
 import { tick } from './tick'
+import { generateContent } from './scenes/scenesGenerator'
 
+generateContent()
 tick()

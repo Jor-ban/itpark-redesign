@@ -1,4 +1,4 @@
-import { sizes } from "./sizes"
+import { sizes } from "./scenes/sizes"
 import { NoToneMapping, PCFSoftShadowMap, sRGBEncoding, WebGLRenderer } from "three"
 
 export const canvas = document.getElementById('canvas') as HTMLCanvasElement
@@ -14,4 +14,4 @@ renderer.toneMappingExposure = 3
 renderer.shadowMap.enabled = true
 renderer.shadowMap.type = PCFSoftShadowMap
 renderer.setSize(sizes.width, sizes.height)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1))

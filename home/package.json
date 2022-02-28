@@ -19,6 +19,7 @@
   "homepage": "https://github.com/random-jordan/itpark-redesign#readme",
   "devDependencies": {
     "@types/dat.gui": "^0.7.7",
+    "@types/stats.js": "^0.17.0",
     "@types/three": "^0.137.0",
     "dat.gui": "^0.7.9",
     "html-webpack-plugin": "^5.4.0",
@@ -46,6 +47,7 @@
     "raw-loader": "^4.0.2",
     "rxjs": "^7.4.0",
     "sass": "^1.49.8",
+    "stats.js": "^0.17.0",
     "style-loader": "^2.0.0"
   }
 }
