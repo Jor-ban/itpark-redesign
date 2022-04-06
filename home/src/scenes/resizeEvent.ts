@@ -1,5 +1,5 @@
 import { sceneState } from './sceneState';
-import { camera } from "../camera"
+import { camera } from "./camera"
 import { renderer } from "../renderer"
 import { generateContent } from "./scenesGenerator"
 import { getOptimalBreakpoint, sizes } from "./sizes"

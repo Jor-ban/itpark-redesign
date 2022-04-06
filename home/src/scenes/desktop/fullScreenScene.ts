@@ -1,9 +1,6 @@
-import { sizes } from '../sizes'
 import { Group } from "three"
 import { loadPlanets } from '../../utils/loadingManager'
-import { MouseMoveObservable } from "../../utils/mouseMove"
 import { PlanetsObj } from "../../types/PlanetsObj.interface"
-import gsap from 'gsap'
 
 import './customCursor'
 import './lights'
@@ -17,7 +14,6 @@ export const planets: PlanetsObj = {
   startup: null,
   techvibe: null
 };
-export let mouseMoveObservable: MouseMoveObservable | null
 
 export async function loadFullScreen() {
   const gltfPlanets: Group[] = await loadPlanets(
@@ -43,16 +39,4 @@ export async function loadFullScreen() {
   planets.techvibe.name = 'TechVibe'
   planets.startup = gltfPlanets[6]
   planets.startup.name = 'Startup'
-  
-  // start mousemove observing
-  mouseMoveObservable = new MouseMoveObservable({
-    next: (event: MouseEvent) => {
-      const mouseX = event.clientX / sizes.width * 2 - 1
-      const mouseY = -(event.clientY / sizes.height) * 2 + 1
-      gsap.to(planets.park.rotation, {duration: 1, x: - mouseY * 0.2, delay: 0})
-      gsap.to(planets.park.rotation, {duration: 1, y: mouseX * 0.6, delay: 0})
-    },
-    error: null,
-    complete: null,
-  });
 }

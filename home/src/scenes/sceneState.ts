@@ -2,7 +2,7 @@ import { getOptimalBreakpoint } from "./sizes";
 
 export enum CurrentScene {
   'main',
-  'wideScreenLeft' ,
+  'wideScreenLeft',
   'wideScreenRight',
   'mobileMain',
 }

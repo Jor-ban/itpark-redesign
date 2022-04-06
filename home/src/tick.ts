@@ -1,12 +1,12 @@
 import { stats } from './utils/debugger';
 import { renderer } from './renderer'
 import { scene } from './scenes/scene'
-import { camera } from './camera'
+import { camera } from './scenes/camera'
 
 export const tick = () => { 
 
   stats?.begin()
-  
+
   // Render
   renderer.render(scene, camera)
   
