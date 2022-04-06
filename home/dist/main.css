@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: none;
+  background-color: black;
+}
+
+/* debugger controls styles */
+.dg {
+  margin-right: 0 !important;
+  min-width: 320px !important;
+}
+
+.dg .c>input {
+  height: 20px;
+}
+
+.right-square {
+  position: fixed !important;
+  right: 0 !important;
+  width: 55vw !important;
+  border-radius: 0 !important;
+  height: 100vh !important;
+}
+
+.left-square {
+  position: fixed !important;
+  left: 0 !important;
+  width: 55vw !important;
+  border-radius: 0 !important;
+  height: 100vh !important;
+}
+
+.interactive {
+  position: relative;
+  width: 17vh;
+  height: 17vh;
+  border-radius: 50%;
+  z-index: 666;
+  top: 0;
+  /* background-color: rgba(255, 0, 0, 0.212); */
+}
+
+.debug .interactive {
+  background-color: rgba(255, 0, 0, 0.212);
+}
+
+.interactive#education {
+  top: 10vh;
+  left: 20vh
+}
+
+.interactive#market {
+  top: 25vh;
+  left: 1vh;
+}
+
+.interactive#residents {
+  top: 39vh;
+  left: 20vh;
+}
+
+.interactive#infrastructure {
+  top: -41vh;
+  left: 83vh;
+}
+
+.interactive#techvibe {
+  left: 101vh;
+  top: -26vh;
+}
+
+.interactive#startup {
+  top: -11.5vh;
+  left: 83vh;
+}
+
+.interactive#park {
+  top: -71vh;
+  left: 41vh;
+  width: 38vh;
+  height: 38vh;
+}
+
+
+.interactive-elements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#interactive-container {
+  width: 120vh;
+  height: 100vh;
+}
+
+
+#cursor {
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+}
+
+#cursor-inner {
+  transition: all 0.5;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #7dba28;
+  border: 2px solid transparent;
+  transform: translate(-50%, -50%);
+  border: 2px solid transparent;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+  .interactive {
+    width: 13vh;
+    height: 13vh;
+  }
+
+  .interactive#education {
+    top: 12vh;
+    left: 29vh
+  }
+
+  .interactive#market {
+    top: 30vh;
+    left: 11vh;
+  }
+
+  .interactive#residents {
+    top: 49vh;
+    left: 29vh;
+  }
+
+  .interactive#infrastructure {
+    top: -27vh;
+    left: 79vh;
+  }
+
+  .interactive#techvibe {
+    left: 96vh;
+    top: -8vh;
+  }
+
+  .interactive#startup {
+    top: 9.5vh;
+    left: 79vh;
+  }
+
+  .interactive#park {
+    top: -44vh;
+    left: 44vh;
+    width: 32vh;
+    height: 32vh;
+  }
+}

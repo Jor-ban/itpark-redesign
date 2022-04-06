@@ -20,6 +20,8 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/65076529" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 <body>
+    <button style="width: 200px; height:100px" onclick="openPlanets()">Open planets</button>
+    <br> <br>
 <a href="views/itpark/index.html">IT Park</a>
 <br> <br>
 <a href="views/residents/index.html">Residents</a>
@@ -27,5 +29,13 @@
 <a href="views/startups/index.html">Startups</a>
 <br><br>
 <a href="views/infrastructure/index.html">Infrastructure</a>
+
+<script>
+    // send to the dist planets by default
+    function openPlanets() {
+        window.location.href = "https://planets-itpark.web.app/";
+    }
+</script>
+
 </body>
 </html>
